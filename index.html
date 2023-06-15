@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore o Metaverso: Uma Nova Dimensão Digital</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  section {
+    padding: 50px 0;
+    background-color:white;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: 40px 0;
+  }
+  
+  .row .col-md-3 {
+    margin-bottom: 30px;
+  }
+  
+  .row .col-md-4 {
+    margin-bottom: 30px;
+  }
+  
+  .fa-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .column {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .column-icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .column-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .column-paragraph {
+      font-size: 16px;
+    }
+  
+    .container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+     }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    }
+
+.col-md-3 {
+  flex-basis: 23%;
+  margin-bottom: 20px;
+  background-color: #3182CE;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+    }
+
+h4, p {
+  color: rgb(3, 3, 3);
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://speedio.com.br/4.1/assets/img/img-meta.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        METAVERSO
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#localizacao">Onde vai ser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Entretenimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#segmentos">Futuro</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./css/css/images/imagem.PNG" alt="Imagem" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h2>Adentre o Metaverso</h2>
+          <p>Descubra uma nova forma de interação e conexão em um universo digital compartilhado. Explore paisagens virtuais, conheça pessoas de todo o mundo e participe de experiências imersivas. Junte-se à revolução do metaverso hoje mesmo!
+            Botão de ativar notificação: Ative as notificações para receber as últimas novidades e atualizações do metaverso.</p>
+            <button onclick=getNotifications() >Notifications</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao" class="py-5">
+    <div class="container">
+      <h2>Mergulhe na Imersão</h2>
+      <p> Experimente a sensação de estar realmente presente no metaverso. Nossa tecnologia avançada de realidade virtual proporciona uma imersão completa em ambientes digitais. Navegue por paisagens vívidas, interaja com objetos virtuais e desfrute de uma experiência visual e auditiva extraordinária.</p>
+      <<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="" name="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-5">
+    <div class="container">
+      <h2>Entretenimento Imersivo</h2>
+      <p>Desfrute de eventos ao vivo, shows virtuais, jogos multiplayer e experiências de realidade aumentada. O metaverso traz entretenimento interativo e envolvente para um novo patamar.</p>
+      <div class="row">
+        <div class="col-md-3">
+          <h4> Educação Inovadora</h4>
+          <p>Descubra novas formas de aprendizado por meio de ambientes virtuais interativos. Explore museus, participe de aulas e workshops, e colabore com pessoas de todo o mundo.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Comércio Digital</h4>
+          <p>DCrie sua própria loja virtual, compre e venda produtos digitais, e explore um mercado global sem fronteiras. O metaverso oferece novas oportunidades para empreendedores e consumidores.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>A Nova Fronteira Digital</h4>
+          <p>O metaverso é a nova fronteira da era digital, um espaço virtual onde a imaginação se torna realidade. Explore paisagens digitais deslumbrantes, conecte-se com pessoas de todo o mundo.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Colaboração Multissetorial</h4>
+          <p>Trabalhe em equipe, colabore em projetos e crie soluções inovadoras em ambientes virtuais compartilhados. Conecte-se com profissionais de diferentes áreas e crie impacto global.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="segmentos" class="py-5">
+    <div class="container">
+      <h2>Faça Parte do Futuro</h2>
+      <p>O metaverso está evoluindo rapidamente e moldando o futuro da interação digital. Junte-se a nós nessa jornada emocionante e descubra como você pode aproveitar ao máximo as possibilidades do metaverso. Entre em contato conosco hoje mesmo e seja parte dessa revolução digital!</p>
+    </div>
+  </section>
+
+<div class="container">
+  <h1>Metaverso</h1>
+  <section class="columns">
+    <div class="column">
+      <span class="column-icon">🌐</span>
+      <h2 class="column-title">Tecnologia</h2>
+      <p class="column-paragraph">O metaverso é um conceito que combina realidade virtual, inteligência artificial e outras tecnologias para criar um ambiente digital imersivo e interativo.</p>
+    </div>
+    <div class="column">
+      <span class="column-icon">🌍</span>
+      <h2 class="column-title">Novas Possibilidades</h2>
+      <p class="column-paragraph">No metaverso, as pessoas podem explorar mundos virtuais, interagir com outros usuários, criar e experimentar coisas que não seriam possíveis no mundo físico.</p>
+    </div>
+    <div class="column">
+      <span class="column-icon">💡</span>
+      <h2 class="column-title">Impacto Futuro</h2>
+      <p class="column-paragraph">O metaverso tem o potencial de transformar vários setores, incluindo entretenimento, educação, comércio e muito mais, oferecendo experiências e oportunidades inovadoras.</p>
+    </div>
+  </section>
+  
+</div>
+
+<footer>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://speedio.com.br/4.1/assets/img/img-meta.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      METAVERSO
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   </nav>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/scripts.js"></script>
+<script src="./js/geolocation.js"></script>
+<script src="./js/notification.js"></script>
+</body>
+</html>
